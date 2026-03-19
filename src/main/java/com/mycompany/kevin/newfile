@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+package com.mycompany.kevin;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Jhoao777
+ */
+public class Kevin {
+
+    public static void main(String[] args) {
+
+        Scanner readd = new Scanner(System.in);
+        String name[] = new String[5];
+        double pesomin = 0.0f, pesolimt = 50.0f;
+        double peso[] = new double[5];
+        int saco = 0;
+        double pesomax = 0.0f;
+
+        do {
+
+            System.out.println(" ingrese peso de saco N " + (saco + 1) + " :");
+            peso[saco] = readd.nextDouble();
+            if (peso[saco] >= pesomin) {
+                if (peso[saco] >= pesolimt) {
+                    if (peso[saco] >= pesomax) {
+                        pesomax = peso[saco];
+
+                    } 
+                    
+                }
+            }
+
+            saco++;
+        } while (saco < 5);
+
+        System.out.println(pesomax);
+
+    }
+}
